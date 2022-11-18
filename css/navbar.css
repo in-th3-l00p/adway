@@ -1,0 +1,48 @@
+:root {
+    --link-gap: 20px;
+    --x-padding: 100px;
+    --y-padding: 10px;
+}
+
+.nav {
+    position: absolute;
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+
+    color: white;
+
+    padding-left: calc(var(--x-padding) / 4);
+    padding-right: calc(var(--x-padding) / 4);
+    padding-top: var(--y-padding);
+}
+
+@media only screen and (min-width: 600px) {
+    .nav {
+        padding-left: var(--x-padding);
+        padding-right: var(--x-padding);
+    }
+}
+
+.brand {
+    margin-right: auto;
+    user-select: none;
+    font-size: 2rem;
+}
+
+.nav nav {
+    display: flex;
+    gap: var(--link-gap);
+}
+
+.nav nav a {
+    text-decoration: none;
+    font-size: 1.15rem;
+    user-select: none;
+    color: white;
+}
+
+.nav nav a:hover {
+    color: white;
+}
